@@ -1,0 +1,55 @@
+# Emac notes
+
+## General
+C-x C-f  Find file and read
+C-x C-s  Save buffer
+C-x C-w  Write contents to file
+C-x C-c  Save buffers and exit
+C-x o    Switch panes
+C-h k    Describe key
+C-g      Quit command
+C-/      Undo
+C-l      Redraw screen with current line at center
+C-x k    Kill frame
+M-x      Search for function
+
+## Help
+C-h k / f           Help for a keyword / function
+
+## Editing
+C-f / M-f / C-n     Forward character / word / line
+C-b / M-b / C-p     Backward character / word/ line
+C-a / M-a / M-}     Beginning line / sentence / paragraph
+C-e / M-e / M-{     End line / sentence
+C-v / M-<           Scroll up / beginning of file
+M-v / M->           Scroll down / end of file
+
+### Deleting
+C-d / M-d / C-k / M-k     Delete next character / word / line / sentence
+DEL / M-DEL / C-x DEL     Delete previous character / word / sentence
+M-g g                     Go to line
+M-\                       Delete all white space to the left of the point
+
+### Kill ring
+C-SPACE    Mark beginning / end of region
+M-w        Copy the region
+C-y        Yank from kill-ring
+C-x C-x    Replace location of cursor and mark
+M-h / C-x  Mark page / whole buffer   
+
+## Splitting windows
+C-x 0      Delete current window
+C-x 1      One window on the current buffer
+C-x 2 / 3  Split window vertically / horizontally
+C-x ^ / }  Grow window vertically / horizontally
+C-x - / +  Shrink / grow font
+
+## Searching and Replacing
+C-s / C-r      Incremental regex search forward / backward
+C-M-s / C-M-r  Incremental forward / backward
+
+## Programming
+M-/          Hippie expand, cycles through possible expansions of text
+M-s          Remove surrounding parenthesis
+C-c C-d C-d  Documentation for function
+M-.          Jump to source code of function
