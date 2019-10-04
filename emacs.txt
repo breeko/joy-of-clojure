@@ -2,6 +2,7 @@
 
 ## General
 C-x C-f  Find file and read
+
 C-x C-s  Save buffer
 C-x C-w  Write contents to file
 C-x C-c  Save buffers and exit
@@ -56,3 +57,5 @@ M-/          Hippie expand, cycles through possible expansions of text
 M-s          Remove surrounding parenthesis
 C-c C-d C-d  Documentation for function
 M-.          Jump to source code of function
+C-c C-d C-d  Get documentation of function ala cider-doc
+C-c C-d C-a  Search for clojure function via cider-apropos
