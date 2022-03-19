@@ -2,7 +2,7 @@
 
 ## General
 C-x C-f  Find file and read
-
+C-x 4f   Open document in other frame
 C-x C-s  Save buffer
 C-x C-w  Write contents to file
 C-x C-c  Save buffers and exit
@@ -13,19 +13,25 @@ C-/      Undo
 C-l      Redraw screen with current line at center
 C-x k    Kill frame
 M-x      Search for function
+ESC-[n]  Perform next action n times
 
 
 ## Help
 C-h k / f           Help for a keyword / function
+C-h m               General help
+C-h v               Help for a variable
 
 ## Editing
 C-f / M-f / C-n     Forward character / word / line
-C-b / M-b / C-p     Backward character / word/ line
+C-b / M-b / C-p     Backward character / word / line
+C-d / M-d           Delete character / word
 C-a / M-a / M-}     Beginning line / sentence / paragraph
 C-e / M-e / M-{     End line / sentence
 C-v / M-<           Scroll up / beginning of file
 M-v / M->           Scroll down / end of file
-
+M-g g               Go to line
+M-%                 Replace
+C-/                 Undo - to redo, do non-editing command (e.g. C-f) and undo again to undo the undo
 
 ### Deleting
 C-d / M-d / C-k / M-k     Delete next character / word / line / sentence
@@ -38,7 +44,8 @@ C-SPACE    Mark beginning / end of region
 M-w        Copy the region
 C-y        Yank from kill-ring
 C-x C-x    Replace location of cursor and mark
-M-h / C-x  Mark page / whole buffer   
+M-h / C-x  Mark page / whole buffer
+C-k        Cut from cursor to end of line
 
 ## Splitting windows
 C-x 0      Delete current window
@@ -51,11 +58,21 @@ C-x - / +  Shrink / grow font
 ## Searching and Replacing
 C-s / C-r      Incremental regex search forward / backward
 C-M-s / C-M-r  Incremental forward / backward
+C-c C-d C-a    Apropros search; find arbitrary text across function names and documentation
 
 ## Programming
+C-x C-e      Evaluate expression immediately preceding point
 M-/          Hippie expand, cycles through possible expansions of text
 M-s          Remove surrounding parenthesis
 C-c C-d C-d  Documentation for function
 M-.          Jump to source code of function
 C-c C-d C-d  Get documentation of function ala cider-doc
 C-c C-d C-a  Search for clojure function via cider-apropos
+C-c M-n M-n  Switch to namespace of current buffer
+C-c C-k      Compile current buffer
+C-M-f        Go to closing parenthesis
+
+## Python
+C-c C-z     Open python shell
+C-c C-c     Run current buffer
+C-c C-r     Run line up to cursor
